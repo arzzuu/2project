@@ -1,41 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+h2{
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;    
+    margin-top: 35px;
+}
 .container{
+    width: 336px; 
     height: 236px;
-    width: 336px;
     border-radius: 10px;
     border: 1px solid #C4C4C4;
-    }
-.yellow-part{
-    width: 336px;
-    height: 28px;
-    z-index: 1;
-    background-color: #FFDC40;
-    border: 50px;
+    background: linear-gradient( #FFDC40 0px,#FFDC40 25px, white 20px, white 100px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .enter{
+    margin: 10px 20px ;
     width:286px;
     height: 40px;
     border: 1px #C4C4C4 solid;
     border-radius: 10px;
-    z-index: 1;
+    background: url(./plus.svg) no-repeat;
+    background-position: 88% 50%;
 }
-.button-block{
-    margin: 18px;
-}
-button{
+button{ 
     width: 150px;
     height: 42px;
+    margin: 8px 90px;
     background-color: #833AE0;
     border: none;
     border-radius: 71px;
-    z-index: 1;
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
 }
-.plus{
-    /* display: block; */
+.icon{
     width: 42px;
     height: 42px;
     background-color: #9953F1;
     border-radius: 20px;
 }
-/* .list{
-    margin: 0px;
-} */
+.list{
+    z-index: 2; 
+    margin-left: 280px;
+}
