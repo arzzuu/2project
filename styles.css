@@ -40,11 +40,15 @@ button{
     letter-spacing: 0em;
     text-align: center;
 }
-.icon{
+button .plus{
+    display: flex;
     width: 42px;
-    height: 42px;
+    height: 40px;
     background-color: #9953F1;
-    border-radius: 20px;
+    border-radius: 71px;
+    justify-items: center;
+    margin-top: 0px;
+    margin-left: -6px;
 }
 .list{
     z-index: 2; 
