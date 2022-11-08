@@ -5,6 +5,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./functional.js"></script> 
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +13,12 @@
         <div class="container">
             <h2>To-Do List</h2> 
             <img src="./icon.svg" alt="icon" class="list">
-            <input type="number" class="enter">
-            <button><span class="plus"> + </span> Добавить</button>
+
+            <ol id="list">
+                <li><input class="enter" maxlength="30"></li>
+            </ol>
+            
+            <button><span class="plus"><p> + </p></span><p>Добавить</p></button>
         </div>
     </main>
 </body> 

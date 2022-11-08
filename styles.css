@@ -10,22 +10,31 @@ h2{
 }
 .container{
     width: 336px; 
-    height: 236px;
+    height: 100%;
     border-radius: 10px;
     border: 1px solid #C4C4C4;
     background: linear-gradient( #FFDC40 0px,#FFDC40 25px, white 20px, white 100px);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .enter{
+    list-style-type: none;
     margin: 10px 20px ;
     width:286px;
     height: 40px;
     border: 1px #C4C4C4 solid;
     border-radius: 10px;
-    background: url(./plus.svg) no-repeat;
+    background-image: url(./plus.svg) ;
+    background-repeat:  no-repeat;
+    background-position: 88% 50%;
+}
+.second-image{
+    background-image: url(./plus2.svg) ;
+    background-repeat:  no-repeat;
     background-position: 88% 50%;
 }
 button{ 
+    display: flex;
+    justify-content:flex-start;
     width: 150px;
     height: 42px;
     margin: 8px 90px;
@@ -41,7 +50,6 @@ button{
     text-align: center;
 }
 button .plus{
-    display: flex;
     width: 42px;
     height: 40px;
     background-color: #9953F1;
@@ -49,6 +57,14 @@ button .plus{
     justify-items: center;
     margin-top: 0px;
     margin-left: -6px;
+    margin-right: 14px;
+}
+.cross{
+    display:block;
+    position: absolute;
+    margin-top: -100px;
+    margin-right: 100px;
+    z-index: 00;
 }
 .list{
     z-index: 2; 
