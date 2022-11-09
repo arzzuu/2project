@@ -12,13 +12,16 @@
     <main> 
         <div class="container">
             <h2>To-Do List</h2> 
-            <img src="./icon.svg" alt="icon" class="list">
-
-            <ol id="list">
-                <li><input class="enter" maxlength="30"></li>
-            </ol>
-            
-            <button><span class="plus"><p> + </p></span><p>Добавить</p></button>
+            <img src="./icon.svg" alt="icon" id="list">
+            <ul id="new1">
+                <li id="div">
+                   <div class="button-and-input">
+                        <input type="text" id="enter" maxlength="15">
+                     <button type="submit" class="knopka"><img src="./plus.svg" class="plusik"> </button>
+                 </div>
+              </li>     
+          </ul>
+            <button class="in" ><span class="plus"><p>+</p></span><p>Добавить</p></button>
         </div>
     </main>
 </body> 

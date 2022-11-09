@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-h2{
+body{
     font-family: Roboto;
+}
+h2{
     font-size: 26px;
     font-weight: 900;
     line-height: 30px;
@@ -16,37 +18,52 @@ h2{
     background: linear-gradient( #FFDC40 0px,#FFDC40 25px, white 20px, white 100px);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.enter{
+#enter{
     list-style-type: none;
-    margin: 10px 20px ;
+    margin-right: 20px;
     width:286px;
     height: 40px;
     border: 1px #C4C4C4 solid;
     border-radius: 10px;
-    background-image: url(./plus.svg) ;
+    outline: none;
+    /* font-family: Roboto; */
+    text-align:center;
+    /* padding-right: 10px; */
+    /* background-image: url(./plus.svg) ;
     background-repeat:  no-repeat;
-    background-position: 88% 50%;
+    background-position: 88% 50%; */
 }
-.second-image{
-    background-image: url(./plus2.svg) ;
-    background-repeat:  no-repeat;
-    background-position: 88% 50%;
+.button-and-input{
+    margin: 0px;
 }
-button{ 
+.knopka{
+    z-index: 2;
+    /* right: 100; */
+    /* bottom: 40px; */
+    top: -30px;
+    left: 250px;
+    position: relative;
+    background-color: none;
+    border: 0;
+    background: transparent;
+}
+.plusik:hover{
+    background: url(./plus2.svg); 
+}
+.in{ 
+    /* font-family: Robot */
     display: flex;
     justify-content:flex-start;
     width: 150px;
     height: 42px;
-    margin: 8px 90px;
+    margin: 0px 90px 15px 90px;
     background-color: #833AE0;
     border: none;
     border-radius: 71px;
     color: white;
-    font-family: Roboto;
+    cursor: pointer;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
+    /* letter-spacing: 0em; */
     text-align: center;
 }
 button .plus{
@@ -59,14 +76,24 @@ button .plus{
     margin-left: -6px;
     margin-right: 14px;
 }
-.cross{
-    display:block;
-    position: absolute;
-    margin-top: -100px;
-    margin-right: 100px;
-    z-index: 00;
-}
-.list{
+#list{
     z-index: 2; 
     margin-left: 280px;
+}
+#list:hover{
+    /* display: none; */
+    background: url('/sort2.svg');
+}
+li{
+    list-style-type: none;
+    margin-left: -35px;
+    padding: 0px;
+    margin-top: -25px;
+}
+.button-and-input{
+    margin-top: 40px;
+}
+ul{
+margin-right: 15px;
+margin-left: 15px;
 }
