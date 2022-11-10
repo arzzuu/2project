@@ -1,10 +1,7 @@
 const element = document.querySelector('.in');
 const secButt = document.querySelector('.knopka');
-// secButt.forEach((element) => {  
    secButt.addEventListener('click', deleteValue);
   
-// });
-
 element.addEventListener('click', getListContent);
 function getListContent()
 {
@@ -12,5 +9,4 @@ function getListContent()
 }
 function deleteValue(){
    document.getElementById('enter').value = "";
-   // document.getElementById('li').value = "";
 }
