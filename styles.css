@@ -19,31 +19,34 @@ h2{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #enter{
+    /* margin-top: 10px; */
     list-style-type: none;
-    margin-right: 20px;
-    width:286px;
-    height: 40px;
-    border: 1px #C4C4C4 solid;
-    border-radius: 10px;
+    /* margin-right: 20px; */
+    border: none;
+    width:200px;
+    height: 42px;
+    padding: 0px;
     outline: none;
-    /* font-family: Roboto; */
-    text-align:center;
     /* padding-right: 10px; */
     /* background-image: url(./plus.svg) ;
     background-repeat:  no-repeat;
     background-position: 88% 50%; */
 }
 .button-and-input{
+    /* position: absolute; */
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center */
     margin: 0px;
 }
 .knopka{
-    z-index: 2;
-    /* right: 100; */
-    /* bottom: 40px; */
-    top: -30px;
-    left: 250px;
-    position: relative;
+    margin-left: 0px;
+   margin-top: -100px ;
     background-color: none;
+    position: relative;
+    top: 5px;
+    right: 9px;
     border: 0;
     background: transparent;
 }
@@ -51,12 +54,13 @@ h2{
     background: url(./plus2.svg); 
 }
 .in{ 
+
     /* font-family: Robot */
     display: flex;
     justify-content:flex-start;
     width: 150px;
     height: 42px;
-    margin: 0px 90px 15px 90px;
+    margin: 20px 90px 15px 90px;
     background-color: #833AE0;
     border: none;
     border-radius: 71px;
@@ -86,14 +90,22 @@ button .plus{
 }
 li{
     list-style-type: none;
-    margin-left: -35px;
-    padding: 0px;
-    margin-top: -25px;
+    /* margin-left: -35px; */
+    /* padding: 0px; */
+    /* margin-top: -25px; */
 }
 .button-and-input{
-    margin-top: 40px;
+    /* margin-top: -10px; */
+    margin-top: 10px;
+    margin-left: 20px;
+    width:286px;
+    border: 1px #C4C4C4 solid;
+    border-radius: 10px;
+    height: 100%;
+    outline: none;
+    align-items: center;
+    /* text-align:center; */
 }
 ul{
-margin-right: 15px;
-margin-left: 15px;
+margin: 0px;
 }

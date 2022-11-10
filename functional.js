@@ -8,9 +8,8 @@ const secButt = document.querySelector('.knopka');
 element.addEventListener('click', getListContent);
 function getListContent()
 {
-   div.insertAdjacentHTML('afterend','<li><input type="text" id="enter"><button type="submit" class="knopka"><img src="./plus.svg" class="plusik"> </button></li>')
+   div.insertAdjacentHTML('afterend','<li><input type="text" id="enter"><button type="button" class="knopka"><img src="./plus.svg" class="plusik"> </button></li>')
 }
-
 function deleteValue(){
    document.getElementById('enter').value = "";
    // document.getElementById('li').value = "";
