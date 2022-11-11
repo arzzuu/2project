@@ -68,8 +68,14 @@ for(let i = 0; (i < list.length); i++){
 let i=0;
 let image=document.getElementById("list");
 image.addEventListener('click', imgsrc)
-let imgs=new Array('sort1.svg', 'sort2.svg');
+let imgs=new Array('icon2.svg', 'icon.svg');
 function imgsrc() {
     i++;i%=imgs.length;
     image.src = imgs[i];
+}
+image.addEventListener('mouseover', imgsrc1)
+function imgsrc1() {
+if(image.src === 'icon.svg' ){
+imgs.style.backgroundColor = 'black'
+}
 }
