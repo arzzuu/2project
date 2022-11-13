@@ -18,9 +18,7 @@ h2{
     background: linear-gradient( #FFDC40 0px,#FFDC40 25px, white 20px, white 100px);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/* input:disabled {
-    background-color: none;
-} */
+
 #enter{
     background-color: none;
     /* margin-top: 10px; */
@@ -36,21 +34,14 @@ h2{
     background-repeat:  no-repeat;
     background-position: 88% 50%; */
 }
-.button-and-input{
-    /* position: absolute; */
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    /* justify-content: center */
-    margin: 0px;
-}
+
 .knopka{
-    margin-left: 0px;
-   margin-top: -100px ;
+    /* margin-left: 0px; */
+   /* margin-top: -100px ; */
     background-color: none;
-    position: relative;
-    top: 5px;
-    right: 9px;
+    /* position: relative; */
+    margin-top: 10px;
+    right: 15px;
     border: 0;
     background: transparent;
 }
@@ -107,11 +98,23 @@ li{
     border: 1px #C4C4C4 solid;
     border-radius: 10px;
     height: 100%;
-    max-height: 200px;
+    max-height: 168px;
     outline: none;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+    /* scrollbar-width: thin; */
     /* text-align:center; */
+}
+/* .button-and-input::-webkit-scrollbar{
+	width: 7px;
+	background: #eee;
+    border-radius: 20px;
+
+} */
+.button-and-input::after{
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;
 }
 #enter:disabled{
     background: none;

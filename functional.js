@@ -6,9 +6,9 @@ secButt.addEventListener('click', deleteValue);
 firstInput.addEventListener('keyup', (e) => {
    console.log(e.key)
    if(e.key == 'Enter'){
-         console.log(e.target.disabled )
-        e.target.disabled = true;
-      }
+      // console.log(e.target.disabled )
+      e.target.disabled = true;
+   }
 });
 
 element.addEventListener('click', getListContent);
@@ -70,7 +70,7 @@ let image=document.getElementById("list");
 image.addEventListener('click', imgsrc)
 let imgs=new Array('icon2.svg', 'icon.svg');
 function imgsrc() {
-    i++;i%=imgs.length;
+    i++; i %= imgs.length;
     image.src = imgs[i];
 }
 image.addEventListener('mouseover', imgsrc1)
@@ -79,3 +79,4 @@ if(image.src === 'icon.svg' ){
 imgs.style.backgroundColor = 'black'
 }
 }
+// https://only-to-top.ru/blog/coding/2020-01-31-stilizaciya-skrolla-css.html
