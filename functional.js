@@ -14,7 +14,7 @@ firstInput.addEventListener('keyup', (e) => {
 element.addEventListener('click', getListContent);
 function getListContent()
 {
-   div.insertAdjacentHTML('beforeend','<li><input type="text" id="enter"><button type="button" class="knopka"><img src="./plus.svg" class="plusik"> </button></li>')
+   new1.insertAdjacentHTML('beforeend','<li><input type="text" id="enter"><button type="button" class="knopka"><img src="./plus.svg" class="plusik"> </button></li>')
    let inputs = document.querySelectorAll('input');
    let cross = document.querySelectorAll('.knopka');
    cross.forEach((element,i) => {
@@ -45,7 +45,6 @@ function functionSort(){
    let list = document.querySelectorAll('input');
    let sortList = new Array;
    if(k % 2 != 0){
-      // document.querySelector("#picture1").src = "./sort1.svg"
    for(let i = 0; (i < list.length); i++){
       // console.log('l')
       if( list[i].value != '')
@@ -54,17 +53,28 @@ function functionSort(){
    sortList.sort()
    for(let i = 0; (i < list.length); i++){
       list[i].value = sortList[i];
-}}
-else{
-for(let i = 0; (i < list.length); i++){
-   if( list[i].value != '')
-   sortList[i] = list[i].value;
+      if(sortList[i] == undefined);
+      list[i].value = '';
+}
+}
+   else{
+   for(let i = 0; (i < list.length); i++){
+      if( list[i].value != '');
+       sortList[i] = list[i].value;
 }
 sortList.sort().reverse()
 for(let i = 0; (i < list.length); i++){
    list[i].value = sortList[i];
+   if(sortList[i] == undefined)
+   list[i].value = ''
 }}
 }
+let enters = document.querySelectorAll('input')
+const list = document.querySelector('.button-and-input');
+list.addEventListener('keydown', function(event){
+   if(event.code == 'Enter'){
+      list.scrollBy(0,10000);
+      }}); 
 let i=0;
 let image=document.getElementById("list");
 image.addEventListener('click', imgsrc)
@@ -73,10 +83,5 @@ function imgsrc() {
     i++; i %= imgs.length;
     image.src = imgs[i];
 }
-image.addEventListener('mouseover', imgsrc1)
-function imgsrc1() {
-if(image.src === 'icon.svg' ){
-imgs.style.backgroundColor = 'black'
-}
-}
-// https://only-to-top.ru/blog/coding/2020-01-31-stilizaciya-skrolla-css.html
+let drag = document.querySelector('#new1')
+drag = new Sortable(drag);

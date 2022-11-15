@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <link href="./styles.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./functional.js"></script> 
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <title>To-Do List</title>
+        <meta charset="UTF-8">
+        <link href="./styles.css" rel="stylesheet" type="text/css">
+        <script type="module" src="https://sortablejs.github.io/Sortable/Sortable.js"></script> 
+        <script type="module" src="./functional.js"></script> 
+  </head>
+ <body>
     <main> 
-        <div class="container">
+      <div class="container">
             <h2>To-Do List</h2> 
             <img src="./icon.svg" alt="icon" id="list">
-            <div class="button-and-input">
-                    <ul id="new1">
-                <li id="div">
-                        <input type="text" id="enter" maxlength="15">
+           <div class="button-and-input">
+              <ul id="new1" class="scroll">
+                  <li id="div">
+                        <input type="text" id="enter" >
                         <button type="button" class="knopka"><img src="./plus.svg" class="plusik"> </button>
-                    </li>     
-                </ul>
-                    </div>
+                  </li>     
+              </ul>
+            </div>
             <button class="in" ><span class="plus"><p>+</p></span><p>Добавить</p></button>
         </div>
-    </main>
+   </main>
 </body> 
 </html>
