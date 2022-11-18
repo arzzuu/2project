@@ -1,8 +1,10 @@
 const element = document.querySelector('.in');
 const secButt = document.querySelector('.knopka');
 const firstInput = document.querySelector('input');
-secButt.addEventListener('click', deleteValue);
+const sortButton = document.querySelector('#list')
+let enters = document.querySelectorAll('input')
 
+secButt.addEventListener('click', deleteValue);
 firstInput.addEventListener('keyup', (e) => {
    console.log(e.key)
    if(e.key == 'Enter'){
@@ -20,8 +22,9 @@ function getListContent()
    cross.forEach((element,i) => {
       element.addEventListener('click', () => {
          inputs[i].value= ''
-      });
+         inputs[i].disabled=false
 
+      });
    });
    inputs.forEach(element => {
       addEventListener('keyup', (event) => {
@@ -31,13 +34,13 @@ function getListContent()
       })
       
    });
+   list.scrollBy(0,10000);
 }
-
 function deleteValue(){
    document.getElementById('enter').value = "";
+   document.getElementById('enter').disabled=false
 }
 
-const sortButton = document.querySelector('#list')
 sortButton.addEventListener('click', functionSort);
 let k = 0;
 function functionSort(){
@@ -46,14 +49,13 @@ function functionSort(){
    let sortList = new Array;
    if(k % 2 != 0){
    for(let i = 0; (i < list.length); i++){
-      // console.log('l')
       if( list[i].value != '')
       sortList[i] = list[i].value;
    }
    sortList.sort()
    for(let i = 0; (i < list.length); i++){
       list[i].value = sortList[i];
-      if(sortList[i] == undefined);
+      if(sortList[i] == undefined)
       list[i].value = '';
 }
 }
@@ -69,11 +71,10 @@ for(let i = 0; (i < list.length); i++){
    list[i].value = ''
 }}
 }
-let enters = document.querySelectorAll('input')
 const list = document.querySelector('.button-and-input');
 list.addEventListener('keydown', function(event){
    if(event.code == 'Enter'){
-      list.scrollBy(0,10000);
+      event.target.scrollIntoView()
       }}); 
 let i=0;
 let image=document.getElementById("list");
